@@ -1,9 +1,8 @@
 ﻿namespace Dates.Web.ViewModels.Settings
 {
+    using AutoMapper;
     using Dates.Data.Models;
     using Dates.Services.Mapping;
-
-    using AutoMapper;
 
     public class SettingViewModel : IMapFrom<Setting>, IHaveCustomMappings
     {

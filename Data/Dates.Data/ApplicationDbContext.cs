@@ -26,6 +26,10 @@
 
         public DbSet<Setting> Settings { get; set; }
 
+        public DbSet<UserImages> UserImages { get; set; }
+
+        public DbSet<UserMessage> UserMessages { get; set; }
+
         public override int SaveChanges() => this.SaveChanges(true);
 
         public override int SaveChanges(bool acceptAllChangesOnSuccess)

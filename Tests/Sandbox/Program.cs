@@ -5,6 +5,7 @@
     using System.IO;
     using System.Threading.Tasks;
 
+    using CommandLine;
     using Dates.Data;
     using Dates.Data.Common;
     using Dates.Data.Common.Repositories;
@@ -13,9 +14,6 @@
     using Dates.Data.Seeding;
     using Dates.Services.Data;
     using Dates.Services.Messaging;
-
-    using CommandLine;
-
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
