@@ -33,9 +33,12 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link text-dark custom-color" asp-area="" asp-controller="Users" asp-action="AddImage">Add Picture</a>
-                        </li>
+                        @if (this.User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark custom-color" asp-area="" asp-controller="Users" asp-action="AddImage">Add Picture</a>
+                            </li>
+                        }
 
                     </ul>
                 </div>

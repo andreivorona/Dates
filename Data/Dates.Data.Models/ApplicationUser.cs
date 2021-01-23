@@ -16,6 +16,9 @@ namespace Dates.Data.Models
             this.Roles = new HashSet<IdentityUserRole<string>>();
             this.Claims = new HashSet<IdentityUserClaim<string>>();
             this.Logins = new HashSet<IdentityUserLogin<string>>();
+
+            this.UserImages = new HashSet<UserImages>();
+            this.UserMessages = new HashSet<UserMessage>();
         }
 
         // Audit info
@@ -27,6 +30,13 @@ namespace Dates.Data.Models
         public bool IsDeleted { get; set; }
 
         public DateTime? DeletedOn { get; set; }
+
+        // Custom logic
+        public string ImageUrl { get; set; }
+
+        public virtual ICollection<UserImages> UserImages { get; set; }
+
+        public virtual ICollection<UserMessage> UserMessages { get; set; }
 
         public virtual ICollection<IdentityUserRole<string>> Roles { get; set; }
 

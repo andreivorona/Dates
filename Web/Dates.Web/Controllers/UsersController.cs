@@ -1,11 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Dates.Web.Controllers
+﻿namespace Dates.Web.Controllers
 {
+    using Microsoft.AspNetCore.Mvc;
+
     public class UsersController : Controller
     {
         public IActionResult AddImage()
